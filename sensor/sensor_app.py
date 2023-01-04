@@ -1,4 +1,5 @@
 # Runner script for all modules
+from load_data import load_sensor_data
 
 
 ##############################
@@ -7,7 +8,7 @@
 data = []
 print("Sensor Data App")
 ##############################
-
+data = load_sensor_data()
 # Module 1 code here:
 
 # Module 2 code here:
