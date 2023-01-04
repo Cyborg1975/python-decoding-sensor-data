@@ -7,8 +7,9 @@ class HouseInfo:
 
     def get_data_by_area(self, field, rec_area=0):
         field_data = []
-    for record in self.data:
-        if rec_area == 0:
-            field_data.append(record[field])
-        elif rec_area == record['area']:
-            rec_area == int(record['area'])
+
+        for record in self.data:
+            if rec_area == 0:
+                field_data.append(record[field])
+            elif rec_area == record['area']:
+                rec_area == int(record['area'])
