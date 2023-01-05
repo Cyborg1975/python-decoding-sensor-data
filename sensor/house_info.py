@@ -22,5 +22,5 @@ class HouseInfo:
                 field_data.append(record[field])
         return field_data
 
-        def get_data_by_area(self, rec_area=0):
-        recs = super.get_data_by_area("temperature", rec_area))
+    def get_data_by_area(self, rec_area=0):
+        recs = super.get_data_by_area("temperature", rec_area)
