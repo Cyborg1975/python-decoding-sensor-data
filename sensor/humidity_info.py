@@ -7,3 +7,11 @@ class HumidityData(HouseInfo):
         for rec in data:
             recs.append(float(rec) * 100)
         return recs
+
+    def get_data_by_area(self, rec_area=0):
+        recs = super().get_data_by_area("Humidity", rec_area)
+        return self._convert_data(recs)
+
+    def get_data_by_date(self, rec_date=date.today()):
+        recs = super().get_data_by_date("Humidity", rec_date)
+        return self._convert_data(recs)
