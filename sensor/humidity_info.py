@@ -6,4 +6,4 @@ class HumidityData(HouseInfo):
         recs = []
         for rec in data:
             recs.append(float(rec) * 100)
-    return recs
+        return self.recs
