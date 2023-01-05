@@ -11,3 +11,9 @@ class EnergyData(HouseInfo):
         energy = energy & self.ENERGY_BITS            # mask ENERGY bits
         energy = energy >> 4                          # shift right
         return energy
+
+    def _convert_data(self, data):
+        recs = []
+        for rec in data:
+            recs.append(_get_energy(rec))
+        return recs
