@@ -5,7 +5,7 @@ class HouseInfo:
     def __init__(self, data):
         self.data = data
 
-    def get_data_by_area(self, field, rec_area=date.today()):
+    def get_data_by_area(self, field, rec_area):
         field_data = []
         for record in self.data:
             if rec_area == 0:
@@ -14,5 +14,5 @@ class HouseInfo:
                 field_data.append(record[field])
         return field_data
 
-    def get_data_by_date(self, field, rec_date):
+    def get_data_by_date(self, field, rec_date=date.today()):
         self.field_data = []
