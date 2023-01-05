@@ -16,3 +16,6 @@ class ParticleData(HouseInfo):
     def get_data_by_date(self, rec_date=date.today()):
         recs = super().get_data_by_date("particulate", rec_date)
         return self._convert_data(recs)
+
+    def get_data_concentrations(self, data):
+        particulate = {0: "good", 0: "moderate", 0: "bad"}
