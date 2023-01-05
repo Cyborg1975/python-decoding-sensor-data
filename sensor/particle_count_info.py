@@ -6,4 +6,4 @@ class ParticleData(HouseInfo):
         recs = []
         for rec in data:
             recs.append(float(rec)
-    return recs
+        return recs
